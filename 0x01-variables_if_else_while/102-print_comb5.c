@@ -7,35 +7,25 @@
  */
 int main(void)
 {
-int c;
-int d;
-int e = 0;
+	int num1, num2;
 
-while (e < 10)
-{
-d = 0;
-while (d < 10)
-{
-c = 0;
-while (c < 10)
-{
-if (c != d && d != e && e < d && d < c)
-{
-putchar('0' + e);
-putchar('0' + d);
-putchar('0' + c);
-if (c + d + e != 9 + 8 + 7)
-{
+	for (num1 = 0; num1 <= 98; num1++)
+	{
+		for (num2 = num1 + 1; num2 <= 99; num2++)
+		{
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+if (num1 == 98 && num2 == 99)
+continue;
 putchar(',');
-putchar(' ');
-}
-}
-c++;
-}
-d++;
-}
-e++;
-}
-putchar('\n');
-return (0);
+			putchar(' ');
+		}
+	}
+
+	putchar('\n');
+
+	return (0);
 }
