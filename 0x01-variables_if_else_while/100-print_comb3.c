@@ -6,8 +6,6 @@
  */
 int main(void)
 {
-int a;
-{
 int digit1, digit2;
 for (digit1 = 0; digit1 < 10; digit1++)
 {
