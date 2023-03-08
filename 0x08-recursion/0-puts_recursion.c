@@ -2,9 +2,9 @@
 
 /**
  * _puts_recursion - that prints a string, followed by a new line.
- * @*s: the string
+ * @*s: the string to be printed
  * Return: always 0 (success)
- * On error, -1 is returned, and errno is set appropriately
+ * 
  */
 void _puts_recursion(char *s)
 
