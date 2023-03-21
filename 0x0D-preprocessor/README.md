@@ -1,0 +1,1 @@
+Preprocessing: This is the first step of the compilation process. The preprocessor performs text substitution and macro expansion based on the directives in the source code. The output of this step is a preprocessed source file
